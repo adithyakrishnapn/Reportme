@@ -1,0 +1,49 @@
+.audio-recorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Ensure full width */
+    max-width: 400px; /* Limit width */
+    margin: auto; /* Center the box */
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .record-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 15px; /* Spacing between button and audio */
+    width: 100%; /* Make it responsive */
+    text-align: center;
+  }
+  
+  .record-btn:hover {
+    background-color: #218838;
+  }
+  
+  .recording {
+    background-color: red;
+  }
+  
+  .audio-player {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .audio-player audio {
+    width: 100%;
+    max-width: 300px; /* Keep player size controlled */
+  }
+  .btn-success{
+    width: 200px;
+  }

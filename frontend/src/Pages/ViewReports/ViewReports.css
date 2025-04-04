@@ -1,0 +1,100 @@
+/* ViewReports.css */
+
+/* Container styling */
+.view-reports-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  /* Reports list styling */
+  .reports-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Report card styling */
+  .report-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hover effect for the card */
+  .report-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image container styling */
+  .image-container {
+    width: 100%;
+    height: 200px; /* You can adjust this height as per the image size */
+    overflow: hidden;
+  }
+  
+  .report-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .report-card:hover .report-image {
+    transform: scale(1.1);
+  }
+  
+  /* Text section styling */
+  .report-details {
+    padding: 15px;
+    text-align: left;
+    flex: 1; /* Ensures the text section takes the remaining space */
+  }
+  
+  .report-details h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .report-details p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Styling the "View Details" button */
+  .view-details-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #3498db;
+    text-decoration: none;
+    text-align: center; /* Centers the button */
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .view-details-link:hover {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+  }
+  
